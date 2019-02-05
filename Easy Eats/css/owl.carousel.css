@@ -186,3 +186,19 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.grewback
+{
+  background: #e8e8e8;
+}
+
+.single-menu2 {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.single-menu2:hover {
+    background: #C9C9C9;
+}
