@@ -179,7 +179,6 @@
   font-weight: 500;
   background: -moz-linear-gradient(left, #0099ff 0%, #00ff04 100%);
     background: -webkit-linear-gradient(left, #0099ff 0%, #00ff04 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#0099ff), to(#00ff04));
     background: -o-linear-gradient(left, #0099ff 0%, #00ff04 100%);
     background: linear-gradient(to right, #0099ff 0%, #00ff04 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099ff', endColorstr='#00ff04',GradientType=1 );
@@ -200,7 +199,21 @@
 }
 
 .single-menu2:hover {
-    background: #C9C9C9;
+    background: #DCDCDC;
+}
+
+.single-menu2:active {
+  background-color: #C9C9C9;
+}
+
+#dayplan3:hover {
+  background: #C9C9C9;
+}
+
+
+
+#dayplan5:hover {
+  background: #C9C9C9;
 }
 
 html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }

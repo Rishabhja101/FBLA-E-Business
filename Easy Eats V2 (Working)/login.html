@@ -76,14 +76,51 @@
 			</section>
 			<!-- End banner Area -->
 
+			<!-- Start services Area -->
+			<section class="grewback" id="menu0">
+				<div class="container">
+			<!--		<div>    -->
+
+		</br>
+		</br>
+
+	<div >	<center> <h1>Select Your Meal Plan</h1> </center> </div>
+
+	</br>
+					<div class="row">
+
+
+							<div style="width:310px" class="title-wrap d-flex justify-content-between"></div>
+
+
+								<div class="single-menu" id="dayplan3" onclick="dayplan3()">
+									3 Day Plan ($35 / Week)
+								</div>
+
+								<div style="width:50px" class="title-wrap d-flex justify-content-between"></div>
+
+							<div class="single-menu" id="dayplan5" onclick="dayplan5()">
+								5 Day Plan ($50 / Week)
+							</div>
+
+						<div style="width:240px" class="title-wrap d-flex justify-content-between"></div>
+
+
+						</div>
+				</br>
+				</br>
+				</div>
+			</section>
+			<!-- End services Area -->
+
 			<!-- Start menu-area Area -->
-						<section class="menu-area section-gap" id="menu" style="display: none;">
+						<section class="menu-area section-gap" id="menu" >
 								<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
 								<h1 class="mb-10">What's For Lunch This Week?</h1>
-								<p>Menu is updated every week with new goodies!</p>
+								<p>Select the meals you want and they will be added to your "Meals For The Week" below!</p>
 							</div>
 						</div>
 					</div>
@@ -264,7 +301,7 @@
 						<!-- End menu-area Area -->
 
 						<!-- Start services Area -->
-						<section class="grewback" style="display: none;" id="menu0">
+						<section class="grewback" id="menu0">
 							<div class="container">
 						<!--		<div>    -->
 
@@ -322,7 +359,7 @@
 
 									<div style="width:240px" class="title-wrap d-flex justify-content-between"></div>
 
-										<div class="single-menu">
+										<div class="single-menu" id="day4a">
 											<div class="title-wrap d-flex justify-content-between" >
 												<h4>Day 4</h4>
 											</div>
@@ -336,7 +373,7 @@
 
 									<div style="width:240px" class="title-wrap d-flex justify-content-between"></div>
 
-										<div class="single-menu">
+										<div class="single-menu" id="day5a">
 											<div class="title-wrap d-flex justify-content-between">
 												<h4>Day 5</h4>
 											</div>
@@ -358,96 +395,31 @@
 						</section>
 						<!-- End services Area -->
 
-<section style="display: none;" id = "menu00">
+<section id = "menu00">
 	<div class="container" style="width:270px">
+		<div id="planselector1">
+				5 Meals : $50.00 USD - weekly
+		</div>
+	</br>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <table>
-<tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
-	<option value="3 Meals">3 Meals : $35.00 USD - weekly</option>
-	<option value="5 Meals">5 Meals : $50.00 USD - weekly</option>
-</select> </td></tr>
+	<tr><td><input type="hidden" name="on1" value="Delivery Address">Delivery Address</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on0" value="Subscription Options">Subscription Options</td></tr><tr >  <td style="display: none;">
+	<select name="os0" id=planselector >
+		<option value="3 Meals">3 Meals : $35.00 USD - weekly</option>
+		<option value="5 Meals">5 Meals : $50.00 USD - weekly</option>
+	</select> </td></tr>
 </table>
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIH+QYJKoZIhvcNAQcEoIIH6jCCB+YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAguMJ5diHdrEvPunNahszoj4tFoZfDbQG+lbl5zPb8Ejna4epOBNnoq2Eh/mrp6K9Q1gPfSX+KYv5i6lNocnCw8hyK6DAebVDAv5G7z5W7SmtMwiTnvmXLfvl6wt8fXC70a3SyiNEWXHrxyi9SZr84X8ZD4EAtDEQEfY6uNqLnzDELMAkGBSsOAwIaBQAwggF1BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECDvZNC4qtAQLgIIBUHpTHezQMjVRAZj9QXX7WmqhGv/x5UODXkPmQjZ7JcC227TIn2dRcS7fAOJMXwn9b7fCCFuGrWCMKsbTPF23cloo2lvXZe3zoa4UhZxOR9+ZoLropa51rALzP1uULAmf2wpqIJXJW1T6qwypgSY11xvEG2/ThqHyrajV4Ei5s1p1fEd4w0llVIReQIanTQ8RYeKgsSYBOvb8sP9YEtZOsT7EsCmQh07SoAtA1Lyg7xGf18BfYPg1F4Pkwdk/dnCY7uPqeX6vAZyPpF8096LUX0yEn1XQSTM02NgrBco3nx5aNONtksuYYd6gGBInITArIpLzKLOruBSK4JHBCKzBJM90Ua25WgkgWmuvtdcmR/dMPn0SyV797RTzTEkvLhtMO44v4HVChj4GpZFi1yAsOj8mjzXRpSXQotKTKyLV48WQypMBz+1mCSapsJa/+epUnqCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE5MDIwNDA5NDYxN1owIwYJKoZIhvcNAQkEMRYEFH4dgBf0yibmcjOos/Z8LCQIhFGcMA0GCSqGSIb3DQEBAQUABIGAmjoCsB9fvRIJKhZbnO6wjlGwNR1bUQDld+rRiTBeCcbILbYfbwQxcF1Rtd4Lj+geKmaxWB30WXfKzk1gAk6hXkbT9sfJAIDvruV6r41PN668umqsPOl6y3Cp57B0s2oOzFvz70nEWYSpjgpqFnMtnR9X5wJHnKVAQRqFfjsn4p0=-----END PKCS7-----">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+
 	</div>
 </section>
 
-<section>
-
-<div class="container">
-  <div class="frame">
-    <div class="nav">
-      <ul class"links">
-        <li class="signin-active"><a class="btn">Sign in</a></li>
-        <li class="signup-inactive"><a class="btn">Sign up </a></li>
-      </ul>
-    </div>
-    <div ng-app ng-init="checked = false">
-				        <form class="form-signin" action="" method="post" name="form">
-          <div for="username">Username</div>
-          <input class="form-styling" type="text" name="username" placeholder="" id="email"/>
-          <div for="password">Password</div>
-          <input class="form-styling" type="text" name="password" placeholder="" id="password"/>
-          <input type="checkbox" id="checkbox"/>
-          <div class="btn-animate" onclick="loginReal()">
-            <a class="btn-signin">Sign in</a>
-          </div>
-				        </form>
-
-				        <form class="form-signup" action="" method="post" name="form">
-          <div for="fullname">Full name</div>
-          <input class="form-styling" type="text" name="fullname" placeholder="" id="fullname"/>
-					<div for="address">Address</div>
-          <input class="form-styling" type="text" name="address" placeholder="" id="address"/>
-          <div for="email">Email</div>
-          <input class="form-styling" type="text" name="email" placeholder="" id="emailnew"/>
-          <div for="password">Password</div>
-          <input class="form-styling" type="text" name="password" placeholder="" id="passwordnew"/>
-          <a ng-click="checked = !checked" class="btn-signup" onclick="login()">Sign Up</a>
-				        </form>
-
-            <div  class="success">
-              <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
-                 <path fill="#ffffff" d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
-                  c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
-                  c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
-                <div class="successtext">
-                   <p> Thanks for signing up! Check your email for confirmation.</p>
-                </div>
-             </div>
-      </div>
-
-      <div class="forgot">
-        <a href="#">Forgot your password?</a>
-      </div>
-
-      <div>
-        <div class="cover-photo"></div>
-        <div class="profile-photo"></div>
-        <h1 class="welcome">Welcome, Chris</h1>
-        <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
-      </div>
-  </div>
-
-  <a id="refresh" value="Refresh" onClick="history.go()">
-    <svg class="refreshicon"   version="1.1" id="Capa_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;"
-         xml:space="preserve">
-         <path  d="M321.832,230.327c-2.133-6.565-9.184-10.154-15.75-8.025l-16.254,5.281C299.785,206.991,305,184.347,305,161.224
-                c0-84.089-68.41-152.5-152.5-152.5C68.411,8.724,0,77.135,0,161.224s68.411,152.5,152.5,152.5c6.903,0,12.5-5.597,12.5-12.5
-                c0-6.902-5.597-12.5-12.5-12.5c-70.304,0-127.5-57.195-127.5-127.5c0-70.304,57.196-127.5,127.5-127.5
-                c70.305,0,127.5,57.196,127.5,127.5c0,19.372-4.371,38.337-12.723,55.568l-5.553-17.096c-2.133-6.564-9.186-10.156-15.75-8.025
-                c-6.566,2.134-10.16,9.186-8.027,15.751l14.74,45.368c1.715,5.283,6.615,8.642,11.885,8.642c1.279,0,2.582-0.198,3.865-0.614
-                l45.369-14.738C320.371,243.946,323.965,236.895,321.832,230.327z"/>
-    </svg>
-  </a>
-</div>
-</section>
 
 			<!-- Start reservation Area -->
 			<section class="reservation-area section-gap relative">
@@ -581,15 +553,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script>
 
 			var x = 1;
-			var price = 00;
 
 			function addtocart(contents){
 
 			  document.getElementById("day" + x).innerHTML = contents;
-			  document.getElementById("day" + x).value = "chosen";
-
-			  price += 12.00;
-			  document.getElementById("price").innerHTML = "Price: $" + price + ".00";
 			  x++;
 			}
 			</script>
@@ -678,6 +645,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				document.getElementById("menu0").style.display = "initial";
 				document.getElementById("menu00").style.display = "initial";
 
+			}
+
+			function dayplan3(){
+				document.getElementById("dayplan3").style.background = "#B4B4B4";
+				document.getElementById("dayplan5").style.background = "#fff";
+				document.getElementById("day5").style.display = "none";
+				document.getElementById("day4").style.display = "none";
+				document.getElementById("day5a").style.display = "none";
+				document.getElementById("day4a").style.display = "none";
+				document.getElementById("planselector").value = "3 Meals";
+				document.getElementById("planselector1").innerHTML = "3 Meals : $35.00 USD - weekly";
+			}
+
+			function dayplan5(){
+				document.getElementById("dayplan5").style.background = "#B4B4B4";
+				document.getElementById("dayplan3").style.background = "#fff";
+				document.getElementById("day5").style.display = "inherit";
+				document.getElementById("day4").style.display = "inherit";
+				document.getElementById("day5a").style.display = "inherit";
+				document.getElementById("day4a").style.display = "inherit";
+				document.getElementById("planselector").value = "5 Meals";
+				document.getElementById("planselector1").innerHTML = "5 Meals : $50.00 USD - weekly";
 			}
 
 			</script>
